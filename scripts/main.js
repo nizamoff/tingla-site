@@ -2,7 +2,6 @@ const theHeader = document.querySelector(".header");
 const mainVideo = document.querySelector(".player__video");
 const playBtn = document.querySelector(".player__buttons--play");
 const pauseBtn = document.querySelector(".player__buttons--pause");
-const playerController = document.querySelector(".player__controller");
 const volumeOn = document.querySelector(".player__volume--on");
 const volumeOf = document.querySelector(".player__volume--of");
 const playerSound = document.querySelector("player__sound");
@@ -26,7 +25,6 @@ playBtn.addEventListener("click", function () {
   mainVideo.play();
   playBtn.style.display = "none";
   pauseBtn.style.display = "block";
-  playerController.display = "block";
 });
 
 pauseBtn.addEventListener("click", function () {
@@ -34,3 +32,8 @@ pauseBtn.addEventListener("click", function () {
   pauseBtn.style.display = "none";
   playBtn.style.display = "block";
 });
+
+mainVideo.addEventListener("ended", function () {
+  pauseBtn.style.display = "none";
+  playBtn.style.display = "block";
+})
