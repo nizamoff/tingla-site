@@ -1,0 +1,127 @@
+.info {
+    position: relative;
+    height: 500px;
+    margin-bottom: 268px;
+    @media screen and(max-width:1210px) {
+        
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 125px;
+        height: 125px;
+        background-image: url('../../images/info-abstract-shape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media screen and(max-width:820px) {
+            left: 70%;
+            bottom: 120%;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__image {
+        position: absolute;
+        top: -170px;
+        left: -50px;
+        @media screen and(max-width:1310px) {
+            left: 0;
+            width: 500px;
+        }
+        @media screen and(max-width:964px) {
+            width: 400px;
+            top: -100px;
+        }
+        @media screen and(max-width:820px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media screen and(max-width:400px){
+            width: 300px;
+        }
+        @media screen and(max-width:320px) {
+            width: 280px;
+        }
+    }
+
+    &__texts {
+        position: absolute;
+        padding: 150px 60px;
+        right: -170px;
+        top: -150px;
+        background-image: url('../../images/background-orange-layer.png');
+        background-repeat: no-repeat;
+        background-size: 588px 588px;
+        background-position: -70px 0;
+        @media screen and(max-width:1310px) {
+            right: 0px;
+            padding: 150px 30px;
+        }
+        @media screen and(max-width:820px) {
+            top: 200px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 95%;
+            padding: 80px 0px;
+            background-size: 450px 450px;
+            background-position: 10% 50%;
+            
+        }
+        @media screen and(max-width:400px) {
+            padding: 10px 0px;
+            background-size: 320px 320px;
+        }
+    }
+
+    &__title {
+        width: 600px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: -0.01em;
+        @media screen and(max-width:1210px) {
+            width: 100%;
+            margin-bottom: 25px;
+            font-size: 42px;
+        }
+        @media screen and(max-width:964px) {
+            font-size: 36px;
+        }
+        @media screen and(max-width:820px) {
+            text-align: center;
+            width: 100%;
+        }
+        @media screen and(max-width:500px) {
+            font-weight: 600px;
+            font-size: 26px;
+            line-height: 31px;
+            text-align: start;
+        }
+    }
+
+    &__text {
+        top: 200px;
+        width: 540px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 34px;
+        @media screen and(max-width:1210px) {
+            width: 400px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @media screen and(max-width:820px) {
+            text-align: center;
+            width: 100%;
+        }
+        @media screen and(max-width:500px) {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: start;
+        }
+    }
+
+}

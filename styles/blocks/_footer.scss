@@ -1,0 +1,134 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 62px 0 20px 0;
+    @media screen and(max-width:1140px){
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and(max-width:820px) {
+        flex-direction: column;
+        margin-top: 360px;
+        padding-top: 0;
+    }
+    &__column {}
+
+    &__logo {
+        display: block;
+        margin-bottom: 44px;
+    }
+
+    &__reserved {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        opacity: 0.5;
+        @media screen and(max-width:820px) {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    &__item {
+        margin-bottom: 17px;
+
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $black;
+            transition: all .3s;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+        @media screen and(max-width:400px) {
+            margin-bottom: 14px;
+        }
+    }
+
+    &__phone {
+        display: block;
+        position: relative;
+        margin-bottom: 35px;
+        color: $black;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        transition: all .3s;
+
+        &:hover {
+            color: $blue;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-image: url('../../images/icons/phone-icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            @media screen and(max-width:400px) {
+                width: 18px;
+                left: -25px;
+            }
+            @media screen and(max-width:300px) {
+                display: none;
+            }
+        }
+
+        span {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            opacity: .5;
+        }
+        @media screen and(max-width:820px) {
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+        @media screen and(max-width:400px) {
+            font-size: 14px;
+            bottom: 40%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        @media screen and(max-width:840px){
+            position: absolute;
+            top: 5px;
+            right: 0;
+        }
+    }
+
+    &__socials {
+        margin-right: 20px;
+
+        a {
+            svg {
+                &:hover path{
+                    fill: $blue;
+                }
+                path {
+                    fill: $black;
+                    transition: all .3s;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

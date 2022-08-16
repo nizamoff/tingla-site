@@ -1,0 +1,189 @@
+.hero {
+    position: relative;
+    padding-top: 253px;
+    padding-bottom: 142px;
+    margin-bottom: 160px;
+    box-sizing: border-box;
+    background-image: url('../../images/background-orange-layer.png'), url('../../images/hero-abstract-shape.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -180px -50px, 690px 0px;
+    background-size: contain, 148px;
+
+    @media screen and(max-width: 1140px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media screen and(max-width: 900px) {
+        margin-bottom: 120px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: -180px -50px, right 150px;
+        background-size: contain, 80px;
+    }
+    @media screen and(max-width: 500px) {
+        margin-bottom: 50px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -85px;
+        bottom: 0;
+        width: 98px;
+        height: 98px;
+        background-image: url('../../images/hero-before-abstract-shape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media screen and(max-width: 1140px) {
+            left: 0;
+        }
+        @media screen and(max-width: 500px) {
+           top: 320px;
+           left: -20px;
+           transform: scale(0.6);
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: -52px;
+        bottom: -32px;
+        width: 88px;
+        height: 88px;
+        background-image: url('../../images/hero-after-abstract-shape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media screen and(max-width: 1140px) {
+            right: 0;
+        }
+        @media screen and(max-width: 500px) {
+            transform: scale(0.6);
+            bottom: 0;
+        }
+    }
+
+    &__title {
+        width: 650px;
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 95px;
+        letter-spacing: -0.02em;
+
+        @media screen and(max-width: 1140px) {
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 65px;
+        }
+
+        @media screen and(max-width: 1080px) {
+            width: 400px;
+        }
+
+        @media screen and(max-width: 820px) {
+            width: 100%;
+            padding-top: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 40px;
+            line-height: 45px;
+            text-align: center;
+        }
+        @media screen and(max-width: 500px) {
+            padding-top: 250px;
+            text-align: start;
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+    }
+
+    &__text {
+        width: 657px;
+        margin-bottom: 69px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+
+        @media screen and(max-width: 1140px) {
+            margin-bottom: 49px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @media screen and(max-width: 1080px) {
+            width: 400px;
+        }
+
+        @media screen and(max-width: 820px) {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 100%;
+        }
+        @media screen and(max-width: 500px) {
+            margin-bottom: 28px;
+            text-align: start;
+        }
+    }
+
+    &__button {
+        display: block;
+        width: 181px;
+        height: 60px;
+        position: relative;
+        background: $blue;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: $white;
+        transition: all .3s;
+
+        @media screen and(max-width: 1140px) {
+            width: 150px;
+            height: 50px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        @media screen and(max-width: 820px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and(max-width: 500px) {
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        right: -61px;
+        top: 85px;
+
+        @media screen and(max-width: 1140px) {
+            width: 450px;
+            right: -20px;
+        }
+
+        @media screen and(max-width: 820px) {
+            width: 400px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        @media screen and(max-width: 500px) {
+            width: 300px; 
+        }
+    }
+}

@@ -1,0 +1,32 @@
+//customize
+@import "normalize/normalize";
+@import "variables/variables";
+
+//blocks
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/player";
+@import "blocks/about";
+@import "blocks/info";
+@import "blocks/payment";
+@import "blocks/download";
+@import "blocks/footer";
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url('../images/icons/background-lines.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'SF Pro Display', sans-serif;
+    color: $black;
+    @media screen and(max-width: 576px){
+        background-image: url('../images/icons/background-lines-mobile.svg');
+    }
+}
+
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}

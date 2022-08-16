@@ -1,0 +1,59 @@
+.player {
+    position: relative;
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 94px;
+    overflow: hidden;
+    @media screen and(max-width: 1140px){
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and(max-width: 900px) {
+        height: 360px; 
+        margin-bottom: 150px; 
+    }
+    @media screen and(max-width: 700px) {
+        height: 300px;
+        border-radius: 10px;
+    }
+    @media screen and(max-width: 560px) {
+        height: 240px;
+    }
+    @media screen and(max-width: 450px) {
+        height: 200px;
+    }
+    @media screen and(max-width: 350px) {
+        height: 150px;
+    }
+    &__video {
+        width: 100%;
+        display: block;
+        @media screen and(max-width: 1140px) {
+            transform: scale(1.3);
+        }
+        @media screen and(max-width: 900px) {
+            transform: scale(1);
+        }
+        @media screen and(max-width: 700px) {
+            transform: scale(1);
+        }
+        @media screen and(max-width: 450px) {
+            
+        }
+    }
+    &__buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        border: none;
+        &--pause {
+            display: none;
+        }
+        @media screen and(max-width: 700px) {
+            transform: translate(-50%, -50%) scale(0.7);
+        }
+    }
+}
